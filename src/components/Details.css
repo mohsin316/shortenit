@@ -1,0 +1,118 @@
+.details-section {
+  background-color: hsl(var(--neutral-Gray) / 0.15);
+  padding-bottom: 12rem;
+}
+
+.grid-container {
+  text-align: center;
+  place-items: center;
+  gap: 5rem;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+.stats-holder h2 {
+  color: hsl(var(--neutral-DBlue));
+  font-size: 1.5rem;
+}
+
+.stats-holder p {
+  margin-top: 1.25rem;
+  font-weight: var(--fw-M);
+  color: hsl(var(--neutral-GViolet));
+}
+
+.facility-container {
+  color: hsl(var(--neutral-DBlue));
+  background-color: white;
+  border-radius: 5px;
+  padding: 3rem 1rem 1.75rem;
+  position: relative;
+}
+
+.facility-container > img {
+  position: absolute;
+  padding: 0.75rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: hsl(var(--primary-Dviolet));
+  inset: 0 0 0 50%;
+  transform: translate(-50%, -50%);
+}
+
+.facility-container strong {
+  display: block;
+  font-size: 1.25rem;
+  margin-block: 1rem;
+}
+
+.facility-container p {
+  font-weight: var(--fw-M);
+  color: hsl(var(--neutral-GViolet));
+}
+
+@media (min-width: 320px) {
+  .facility-container > img {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .grid-container {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "title title title"
+      "brand records customize";
+    padding-top: 4rem;
+    gap: 2rem;
+  }
+
+  .facility-container {
+    padding: 3rem 2rem 3rem;
+    text-align: left;
+  }
+
+  .stats-holder {
+    grid-area: title;
+    margin-bottom: 5.5rem;
+  }
+
+  .stats-holder h2 {
+    font-size: 2.5rem;
+  }
+
+  .stats-holder p {
+    max-width: 500px;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  .grid-container div:nth-of-type(2) {
+    grid-area: brand;
+    transform: translateY(-50px);
+  }
+
+  .grid-container div:nth-of-type(2) > img {
+    inset: 0 50% 0 0;
+    transform: translate(35%, -50%);
+  }
+
+  .grid-container div:nth-of-type(3) {
+    grid-area: records;
+  }
+  .grid-container div:nth-of-type(3) > img {
+    inset: 0 50% 0 0;
+    transform: translate(35%, -50%);
+  }
+
+  .grid-container div:nth-of-type(4) {
+    align-self: stretch;
+    grid-area: customize;
+    transform: translateY(50px);
+  }
+  .grid-container div:nth-of-type(4) > img {
+    inset: 0 50% 0 0;
+    transform: translate(35%, -50%);
+  }
+}
