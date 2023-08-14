@@ -1,5 +1,5 @@
 .form-section {
-  background-color: hsl(var(--neutral-Gray) / 0.15);
+  background-color: hsl(var(--neutral-Gray) / 0.2);
   margin-top: 9rem;
 }
 
@@ -13,7 +13,7 @@
 
 form {
   background-color: hsl(var(--primary-Dviolet));
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 5px;
   gap: 1rem;
   display: flex;
@@ -21,7 +21,7 @@ form {
 }
 
 input {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 5px;
 }
 
@@ -32,7 +32,7 @@ input::placeholder {
 
 form button {
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   color: white;
   background-color: hsl(var(--primary-Cyan));
   border: none;

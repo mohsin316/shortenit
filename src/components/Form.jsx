@@ -12,9 +12,9 @@ export default function Form() {
           <button>Shorten it!</button>
         </form>
 
-        {/* <ShortendLink />
         <ShortendLink />
-        <ShortendLink /> */}
+        <ShortendLink />
+        <ShortendLink />
       </div>
     </section>
   );

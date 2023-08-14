@@ -90,7 +90,7 @@
     margin-inline: auto;
     border-radius: 5px;
     background-color: hsl(var(--primary-Dviolet));
-    padding: 2rem 1rem 1.75rem;
+    padding: 2rem 1rem 2.15rem;
   }
 
   .primary-navigation > * {
@@ -109,13 +109,13 @@
     width: 100%;
   }
   .primary-navigation li:nth-child(4) {
-    border-top: 1px solid hsl(var(--neutral-Gray) / 0.5);
+    border-top: 1px solid hsl(var(--neutral-Gray) / 0.25);
     padding-top: 1rem;
   }
   .primary-navigation li:nth-child(5) {
     background-color: hsl(var(--primary-Cyan));
     border-radius: 50vmax;
-    padding: 0.5rem 0.25rem;
+    padding: 0.75rem 0.25rem;
   }
   .hide {
     display: none;
