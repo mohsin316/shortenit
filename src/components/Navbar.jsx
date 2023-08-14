@@ -7,6 +7,7 @@ import Close from "../assets/icon-close.svg";
 
 // hooks
 import { useState } from "react";
+import { motion as m } from "framer-motion";
 
 export default function Navbar() {
   const [open, isOpen] = useState(false);
@@ -26,20 +27,53 @@ export default function Navbar() {
       <nav>
         <ul className={`primary-navigation  ${open ? "" : "hide"}`}>
           <li>
-            <a href="#">Features</a>
+            <m.a
+              whileHover={{ color: open ? "" : "#111" }}
+              whileFocus={{ color: open ? "" : "#111" }}
+              href="#"
+            >
+              Features
+            </m.a>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <m.a
+              whileHover={{ color: open ? "" : "#111" }}
+              whileFocus={{ color: open ? "" : "#111" }}
+              href="#"
+            >
+              Pricing
+            </m.a>
           </li>
           <li>
-            <a href="#">Resources</a>
+            <m.a
+              whileHover={{ color: open ? "" : "#111" }}
+              whileFocus={{ color: open ? "" : "#111" }}
+              href="#"
+            >
+              Resources
+            </m.a>
           </li>
           <li>
-            <a href="#">Login</a>
+            <m.a
+              whileHover={{ color: open ? "" : "#111" }}
+              whileFocus={{ color: open ? "" : "#111" }}
+              href="#"
+            >
+              Login
+            </m.a>
           </li>
-          <li>
-            <a href="#">Sign Up</a>
-          </li>
+          <m.li
+            whileHover={{ opacity: open ? "" : 0.5 }}
+            whileFocus={{ opacity: open ? "" : 0.5 }}
+          >
+            <m.a
+              whileHover={{ opacity: open ? "" : 0.5 }}
+              whileFocus={{ opacity: open ? "" : 0.5 }}
+              href="#"
+            >
+              Sign Up
+            </m.a>
+          </m.li>
         </ul>
       </nav>
     </div>

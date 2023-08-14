@@ -1,0 +1,50 @@
+.cta-section {
+  background-color: hsl(var(--primary-Dviolet));
+  position: relative;
+  isolation: isolate;
+}
+
+.cta-container {
+  display: grid;
+  place-items: center;
+  gap: 1.25rem;
+  text-align: center;
+  padding-block: 4rem;
+}
+
+.cta-container h2 {
+  font-size: 1.75rem;
+  color: white;
+}
+
+.cta-container button {
+  cursor: pointer;
+  border-radius: 50vmax;
+  border: none;
+  font-weight: var(--fw-B);
+  padding: 0.75rem 1.75rem;
+  color: white;
+  background-color: hsl(var(--primary-Cyan));
+}
+.cta-section .bg-container {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -100000px, center;
+  background-size: cover, cover;
+  z-index: -1;
+}
+
+@media (min-width: 1050px) {
+  .cta-section .bg-container {
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, -100000px;
+    background-size: cover, cover;
+    z-index: -1;
+  }
+  .cta-container button {
+    padding: 0.75rem 2rem;
+  }
+}

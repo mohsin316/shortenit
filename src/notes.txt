@@ -1,12 +1,2 @@
 
 MOBILE (my phone)
-
-* in nav lighten the border line to little less. (changed to .25)
-* give button a little more padding in block. (changed to .75)
-* give nav a little more padding at bottom (changed to 2.15)
-
-*give form some block padding.
-button and link also some block padding.(changed to 1.5 and .75 respectively)
-
-* increase advanced statistics block margin/padding (changed to 1.5)
-*increase h2 font (changed to 1.5)

@@ -1,4 +1,10 @@
+// hooks
+import { motion as m } from "framer-motion";
+
+// images
 import HeroImg from "../assets/illustration-working.svg";
+
+// styles
 import "./Hero.css";
 
 export default function Hero() {
@@ -12,7 +18,12 @@ export default function Hero() {
               Build your brand&apos;s recognition and get detailed insights on
               how links are performing
             </p>
-            <button>Get started</button>
+            <m.button
+              whileHover={{ opacity: 0.5 }}
+              whileFocus={{ opacity: 0.5 }}
+            >
+              Get started
+            </m.button>
           </div>
           <div className="hero-img">
             <img src={HeroImg} alt="Hero-image" />
