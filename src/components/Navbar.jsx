@@ -28,8 +28,8 @@ export default function Navbar() {
       </button>
       <nav>
         <m.ul
-          initial={{ y: open ? 0 : -500 }}
-          animate={{ y: open ? 0 : -500 }}
+          initial={{ y: open ? 0 : 0 }}
+          animate={{ y: open ? 500 : 0 }}
           transition={{ type: "spring", bounce: 0.5, duration: 0.8 }}
           className={`primary-navigation  `}
         >

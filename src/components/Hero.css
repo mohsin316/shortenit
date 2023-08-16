@@ -17,8 +17,8 @@
 }
 
 .title > h1 {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
 }
 
 .title > p {
@@ -38,10 +38,10 @@
   font-weight: var(--fw-B);
 }
 
-@media (min-width: 455px) {
+@media (min-width: 450px) {
   .title > h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
     max-width: 375px;
   }
 

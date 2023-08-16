@@ -135,7 +135,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    inset: 5.5rem 1rem auto;
+    inset: -25rem 1rem auto;
     max-width: 400px;
     margin-inline: auto;
     border-radius: 5px;
