@@ -6,12 +6,14 @@ import Toggle from "../assets/icon-hamburger.svg";
 import Close from "../assets/icon-close.svg";
 
 // hooks
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion as m } from "framer-motion";
 
 export default function Navbar() {
   const [open, isOpen] = useState(false);
-
+  useEffect(() => {
+    console.log(open);
+  }, [open]);
   return (
     <div className="container nav-container">
       <a href="#" className="logo">
@@ -25,7 +27,12 @@ export default function Navbar() {
         <span className="visually-hidden">Menu</span>
       </button>
       <nav>
-        <ul className={`primary-navigation  ${open ? "" : "hide"}`}>
+        <m.ul
+          initial={{ y: open ? 0 : -500 }}
+          animate={{ y: open ? 0 : -500 }}
+          transition={{ type: "spring", bounce: 0.5, duration: 0.8 }}
+          className={`primary-navigation  `}
+        >
           <li>
             <m.a
               whileHover={{ color: open ? "" : "#111" }}
@@ -74,7 +81,7 @@ export default function Navbar() {
               Sign Up
             </m.a>
           </m.li>
-        </ul>
+        </m.ul>
       </nav>
     </div>
   );
