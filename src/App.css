@@ -94,7 +94,7 @@ select {
   border: 0;
 }
 .container {
-  --max-width: 1280px;
+  --max-width: 1200px;
   --padding: 2rem;
   width: min(var(--max-width), 100% - var(--padding));
   margin-inline: auto;
