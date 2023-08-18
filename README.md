@@ -48,7 +48,6 @@ Users should be able to:
 
 - [net ninja](https://netninja.dev/courses) - This helped me for Studying javascript. I really liked this course and i highly recommend to beginners.
 - [Kevin Powell](https://www.youtube.com/kepowob) - This person is extremely talented and has helped me learn most of the things i know in CSS. highly recommend to anyone who is studying CSS.
-- [coder coder](https://www.youtube.com/c/TheCoderCoder) - The person who I followed along to make this challenge. Really recommend her channel for people who are just starting out.
 
 ## Author
 
